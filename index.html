@@ -28,16 +28,32 @@
                 opacity: 0;
                 transform: translateY(-10px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
 
+        @keyframes slide {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .slider {
+            display: flex;
+            width: 200%;
+            animation: slide 60s linear infinite;
+        }
+
         .nav-animate {
             animation: slideDown 0.3s ease-out forwards;
         }
-
     </style>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -71,32 +87,33 @@
 </head>
 
 <body class="bg-[#08160D] text-gray-300 h-screen flex flex-col justify-between">
-<header class="flex flex-col sm:flex-row justify-between items-center p-4 sticky top-0 backdrop-blur-md">
-    <div class="flex justify-between items-center w-full sm:w-auto">
-        <div class="text-[#07C85E]">gusti</div>
-        <button id="hamburger" class="sm:hidden focus:outline-none">
-            <i class="fas fa-bars text-gray-400 text-xl"></i>
-        </button>
-    </div>
-    <nav id="nav-links" class="hidden sm:flex sm:space-x-4 text-gray-400 mt-4 sm:mt-0 w-full sm:w-auto nav-animate">
+    <header class="flex flex-col sm:flex-row justify-between items-center p-4 sticky top-0 backdrop-blur-md">
+        <div class="flex justify-between items-center w-full sm:w-auto">
+            <div class="text-[#07C85E]">gusti</div>
+            <button id="hamburger" class="sm:hidden focus:outline-none">
+                <i class="fas fa-bars text-gray-400 text-xl"></i>
+            </button>
+        </div>
+        <nav id="nav-links" class="hidden sm:flex sm:space-x-4 text-gray-400 mt-4 sm:mt-0 w-full sm:w-auto nav-animate">
 
-        <a href="#about" class="block sm:inline-block hover:text-[#07C85E] py-2 sm:py-0 text-left">.about()</a>
-        <a href="#" class="block sm:inline-block hover:text-[#07C85E] py-2 sm:py-0 text-left">.projects()</a>
-        <a href="#" class="block sm:inline-block hover:text-[#07C85E] py-2 sm:py-0 text-left">.contact()</a>
-        <a href="https://www.github.com/lacrisun" class="block sm:inline-block text-gray-400 py-2 sm:py-0 text-left"><i class="fab fa-github"></i></a>
-    </nav>
+            <a href="#about" class="block sm:inline-block hover:text-[#07C85E] py-2 sm:py-0 text-left">.about()</a>
+            <a href="#" class="block sm:inline-block hover:text-[#07C85E] py-2 sm:py-0 text-left">.projects()</a>
+            <a href="#" class="block sm:inline-block hover:text-[#07C85E] py-2 sm:py-0 text-left">.contact()</a>
+            <a href="https://www.github.com/lacrisun"
+                class="block sm:inline-block text-gray-400 py-2 sm:py-0 text-left"><i class="fab fa-github"></i></a>
+        </nav>
 
 
     </header>
     <script>
-        document.getElementById('hamburger').addEventListener('click', function() {
+        document.getElementById('hamburger').addEventListener('click', function () {
             const navLinks = document.getElementById('nav-links');
             navLinks.classList.remove('hidden');
             navLinks.classList.add('nav-animate');
         });
 
         // Hide menu when clicking outside
-        document.addEventListener('click', function(event) {
+        document.addEventListener('click', function (event) {
             const navLinks = document.getElementById('nav-links');
             const hamburger = document.getElementById('hamburger');
             if (!navLinks.contains(event.target) && !hamburger.contains(event.target)) {
@@ -211,6 +228,74 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="overflow-hidden w-full justify-center">
+                <div class="slider">
+                    <div class="flex space-x-8 mr-8 items-center">
+                        <img alt="HTML5 logo" class="h-16 w-16" height="100"
+                            src="img/icons8-html-5-250.png"
+                            width="100" />
+                        <img alt="CSS3 logo" class="h-16 w-16" height="100"
+                            src="img/icons8-css-150.png"
+                            width="100" />
+                        <img alt="JavaScript logo" class="h-16 w-16" height="100"
+                            src="img/icons8-javascript-250.png"
+                            width="100" />
+                        <img alt="React logo" class="h-16 w-16" height="100"
+                            src="img/icons8-python-250.png"
+                            width="100" />
+                        <img alt="Node.js logo" class="h-16 w-16" height="100"
+                            src="img/node-js.png"
+                            width="100" />
+                        <img alt="tailwindcss logo" class="h-16 w-16" height="100"
+                            src="img/icons8-tailwind-css-192.png"
+                            width="100" />
+                        <img alt="MongoDB_Logo" class="h-8 w-32" height="100"
+                            src="img/MDB_BIG.D-96d632a9.png"
+                            width="100" />
+                        <img alt="Nextjs_Logo" class="h-6 w-18" height="100"
+                            src="img/Nextjs-logo.png"
+                            width="100" />
+                        <img alt="CSharp_Logo" class="h-16 w-16" height="100"
+                            src="img/icons8-c-sharp-logo-150.png"
+                            width="100" />
+                        <img alt="C++_logo" class="h-16 w-16" height="100"
+                            src="img/icons8-c++-150.png"
+                            width="100" />
+                    </div>
+                    <div class="flex space-x-8 mr-8 items-center">
+                        <img alt="HTML5 logo" class="h-16 w-16" height="100"
+                            src="img/icons8-html-5-250.png"
+                            width="100" />
+                        <img alt="CSS3 logo" class="h-16 w-16" height="100"
+                            src="img/icons8-css-150.png"
+                            width="100" />
+                        <img alt="JavaScript logo" class="h-16 w-16" height="100"
+                            src="img/icons8-javascript-250.png"
+                            width="100" />
+                        <img alt="React logo" class="h-16 w-16" height="100"
+                            src="img/icons8-python-250.png"
+                            width="100" />
+                        <img alt="Node.js logo" class="h-16 w-16" height="100"
+                            src="img/node-js.png"
+                            width="100" />
+                        <img alt="tailwindcss logo" class="h-16 w-16" height="100"
+                            src="img/icons8-tailwind-css-192.png"
+                            width="100" />
+                        <img alt="MongoDB_Logo" class="h-8 w-32" height="100"
+                            src="img/MDB_BIG.D-96d632a9.png"
+                            width="100" />
+                        <img alt="Nextjs_logo" class="h-6 w-18" height="100"
+                            src="img/Nextjs-logo.png"
+                            width="100" />
+                        <img alt="CSharp_Logo" class="h-16 w-16" height="100"
+                            src="img/icons8-c-sharp-logo-150.png"
+                            width="100" />
+                        <img alt="C++_logo" class="h-16 w-16" height="100"
+                            src="img/icons8-c++-150.png"
+                            width="100" />
                     </div>
                 </div>
             </div>
