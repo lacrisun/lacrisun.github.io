@@ -19,11 +19,14 @@
         body {
             font-family: 'Roboto Mono', monospace;
         }
+        main {
+            overflow-anchor: none;
+        }
     </style>
 </head>
 
-<body class="bg-[#08160D] text-gray-300 h-screen flex flex-col justify-between p-8">
-    <header class="flex flex-col sm:flex-row justify-between items-center p-4 sticky top-0 backdrop-blur-md mb-4">
+<body class="bg-[#08160D] text-gray-300 h-screen flex flex-col justify-between p-4">
+    <header class="bg-[#13412330] flex flex-col sm:flex-row justify-between items-center p-4 sticky top-0 backdrop-blur-md mb-4">
         <div class="flex justify-between items-center w-full sm:w-auto">
             <div class="text-[#07C85E]">gusti</div>
             <button id="hamburger" class="sm:hidden focus:outline-none">
@@ -32,93 +35,91 @@
         </div>
         <nav id="nav-links" class="hidden sm:flex sm:space-x-4 text-gray-400 mt-4 sm:mt-0 w-full sm:w-auto nav-animate">
             <a href="/index.html" class="block sm:inline-block hover:text-[#07C85E] py-2 sm:py-0 text-left">.home()</a>
-            <a href="https://www.github.com/lacrisun"
-                class="block sm:inline-block text-gray-400 py-2 sm:py-0 text-left"><i class="fab fa-github"></i></a>
         </nav>
     </header>
-    <main class="flex flex-1 flex-col items-center justify-start">
-        <h1 class="text-3xl font-bold text-center my-4">
+    <main class="flex-grow">
+        <h1 class="text-3xl font-bold text-center my-8">
             Font Populer
         </h1>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Roboto', sans-serif;">
                     Roboto
-                </h2>
-                <p style="font-family: 'Roboto', sans-serif;">
-                    Ini adalah contoh teks menggunakan font Roboto.
+                </h2>   
+                <p style="font-family: 'Roboto', sans-serif;" class="my-2">
+                    Roboto adalah font sans-serif yang dirancang oleh Christian Robertson untuk Google sebagai bagian dari Android OS. Font ini memperkenalkan perpaduan antara bentuk huruf mekanis dan struktur humanistik, yang membuatnya fleksibel dan mudah dibaca pada berbagai ukuran layar. Roboto dirancang dengan perhatian terhadap detail spasial dan ritme antar huruf, sehingga cocok untuk antarmuka pengguna (UI), aplikasi, dan desain web. 
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Inter', sans-serif;">
                     Inter
                 </h2>
-                <p style="font-family: 'Inter', sans-serif;">
-                    Ini adalah contoh teks menggunakan font Inter.
+                <p style="font-family: 'Inter', sans-serif;" class="my-2">
+                    Inter adalah font sans-serif modern yang dirancang untuk digunakan dalam antarmuka pengguna digital. Font ini dirancang oleh Rasmus Andersson dengan fokus pada keterbacaan di layar digital dengan resolusi tinggi. Inter mendukung berbagai fitur typografi seperti ligatures dan variable weight, menjadikannya pilihan utama dalam desain UI modern.
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Poppins', cursive;">
                     Poppins
                 </h2>
-                <p style="font-family: 'Poppins', cursive;">
-                    Ini adalah contoh teks menggunakan font Poppins.
+                <p style="font-family: 'Poppins', cursive;" class="my-2">
+                    Poppins adalah font geometrik sans-serif yang dirancang oleh Indian Type Foundry dan dirilis pada tahun 2014. Font ini memiliki karakteristik geometris yang kuat dengan bentuk huruf bundar sempurna, menciptakan tampilan modern dan minimalis. Salah satu keunggulan Poppins adalah dukungannya terhadap skrip Devanagari dan Latin, menjadikannya sangat populer di kalangan desainer dari Asia Selatan. Poppins juga hadir dalam banyak varian ketebalan, memungkinkan fleksibilitas dalam desain UI, branding, dan editorial. Desainnya yang bersih namun berani menjadikan Poppins populer di situs web startup, aplikasi mobile, dan proyek-proyek desain grafis kontemporer.
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Montserrat', sans-serif;">
                     Montserrat
                 </h2>
-                <p style="font-family: 'Montserrat', sans-serif;">
-                    Ini adalah contoh teks menggunakan font Montserrat.
+                <p style="font-family: 'Montserrat', sans-serif;" class="my-2">
+                    Montserrat adalah font sans-serif bergaya urban yang dirancang oleh Julieta Ulanovsky pada tahun 2011. Font ini terinspirasi oleh papan nama dan poster di lingkungan Montserrat di Buenos Aires, Argentina. Karakter hurufnya memiliki bentuk yang lebar dan proporsional dengan ujung-ujung yang bersih, menjadikannya ideal untuk penggunaan pada judul, logo, dan desain yang membutuhkan kehadiran visual kuat. Montserrat membawa nuansa retro-modern, dan sering digunakan dalam desain situs web, media sosial, serta poster yang ingin tampil tegas namun bersahabat. Font ini tersedia dalam berbagai varian berat dan gaya, dari tipis hingga ekstra-bold.
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Open Sans', sans-serif;">
                     Open Sans
                 </h2>
-                <p style="font-family: 'Open Sans', sans-serif;">
-                    Ini adalah contoh teks menggunakan font Open Sans
+                <p style="font-family: 'Open Sans', sans-serif;" class="my-2">
+                    Open Sans adalah salah satu font sans-serif paling banyak digunakan secara global, dirancang oleh Steve Matteson dan dirilis oleh Google pada tahun 2011. Font ini dibuat dengan pendekatan neutral yet friendly, yang membuatnya sangat fleksibel dan cocok untuk penggunaan di web, mobile, maupun cetak. Desain Open Sans menonjolkan keterbacaan dengan bentuk huruf terbuka, kontras rendah, dan tinggi-x yang besar. Font ini sangat optimal untuk paragraf panjang maupun elemen navigasi kecil dalam antarmuka pengguna. Keandalan Open Sans menjadikannya pilihan default bagi banyak situs web pemerintahan, perusahaan, dan aplikasi digital.
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Lato', sans-serif;">
                     Lato
                 </h2>
-                <p style="font-family: 'Lato', sans-serif;">
-                    Ini adalah contoh teks menggunakan font Lato.
+                <p style="font-family: 'Lato', sans-serif;" class="my-2">
+                    Lato adalah font sans-serif yang dirancang oleh desainer asal Polandia, Łukasz Dziedzic, pada tahun 2010. Awalnya dibuat untuk proyek komersial, font ini kemudian dirilis secara gratis melalui Google Fonts. Nama Lato berarti "musim panas" dalam bahasa Polandia, mencerminkan karakteristiknya yang hangat dan bersahabat. Lato dirancang untuk keseimbangan antara struktur profesional dan sentuhan humanistik. Dengan bentuk huruf yang bulat namun stabil, Lato sangat ideal untuk antarmuka pengguna, presentasi, serta konten web yang memerlukan kejelasan visual dan kehangatan tipografis. Keberadaan banyak varian berat (dari Hairline hingga Black) juga membuatnya sangat fleksibel untuk berbagai konteks desain.
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Playfair Display', serif;">
                     Playfair Display
                 </h2>
-                <p style="font-family: 'Playfair Display', serif;">
-                    Ini adalah contoh teks menggunakan font Playfair Display.
+                <p style="font-family: 'Playfair Display', serif;" class="my-2">
+                    Playfair Display adalah font serif modern dengan gaya klasik, dirancang oleh Claus Eggers Sørensen. Font ini mengambil inspirasi dari era transisi tipografi pada akhir abad ke-18, ketika pena bulu mulai digantikan oleh cetakan logam. Playfair Display menampilkan kontras tajam antara garis tebal dan tipis serta memiliki bentuk huruf yang elegan dan berkelas. Font ini sering digunakan dalam judul, majalah, undangan, dan editorial mode karena memberikan kesan anggun dan profesional. Karakternya yang dramatis dan tipikal serif menjadikannya pasangan sempurna untuk teks yang ingin ditonjolkan dengan gaya klasik kontemporer.
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Ubuntu', sans-serif;">
                     Ubuntu
                 </h2>
-                <p style="font-family: 'Ubuntu', sans-serif;">
-                    Ini adalah contoh teks menggunakan font Ubuntu.
+                <p style="font-family: 'Ubuntu', sans-serif;" class="my-2">
+                    Font Ubuntu adalah bagian dari identitas visual sistem operasi Ubuntu Linux dan dikembangkan oleh Dalton Maag Ltd pada tahun 2010. Font ini dibuat dengan tujuan menggabungkan estetika teknis dan kemanusiaan, mencerminkan semangat komunitas open-source. Ubuntu memiliki karakter yang khas, dengan lengkungan lembut dan bentuk huruf yang unik namun mudah dibaca, baik di layar kecil maupun besar. Font ini juga dirancang untuk mendukung berbagai bahasa dan sistem penulisan. Karena tampilannya yang modern dan bersahabat, font Ubuntu banyak digunakan dalam antarmuka pengguna dan branding teknologi.
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Libre Franklin', sans-serif;">
                     Libre Franklin
                 </h2>
-                <p style="font-family: 'Libre Franklin', sans-serif;">
-                    Ini adalah contoh teks menggunakan font Libre Franklin.
+                <p style="font-family: 'Libre Franklin', sans-serif;" class="my-2">
+                    Libre Franklin adalah interpretasi modern dari font klasik Franklin Gothic, yang dirancang oleh Impallari Type sebagai proyek open-source. Font ini mempertahankan gaya grotesque sans-serif khas abad ke-20, tetapi diperhalus untuk memenuhi standar desain kontemporer. Libre Franklin memiliki tampilan yang berani, profesional, dan serbaguna. Ini menjadikannya sangat cocok untuk headline, antarmuka pengguna, dan bahkan teks tubuh jika digunakan pada ukuran yang sesuai. Dengan lebih dari 18 gaya berbeda, Libre Franklin sering digunakan oleh lembaga pemerintahan, media digital, dan publikasi editorial karena mampu menyampaikan kesan yang kuat namun tetap netral.
                 </p>
             </div>
             <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                 <h2 class="text-xl font-bold" style="font-family: 'Nunito', sans-serif;">
                     Nunito
                 </h2>
-                <p style="font-family: 'Nunito', sans-serif;">
-                    Ini adalah contoh teks menggunakan font Nunito
+                <p style="font-family: 'Nunito', sans-serif;" class="my-2">
+                    Nunito adalah font sans-serif dengan ujung huruf membulat (rounded terminals), dirancang oleh Vernon Adams. Font ini menggabungkan kehangatan estetika dengan efisiensi tipografi, menjadikannya ideal untuk antarmuka pengguna dan desain yang ingin tampil ramah. Nunito tersedia dalam dua versi utama: Nunito reguler dan Nunito Sans (tanpa gaya membulat ekstrem), keduanya menawarkan berbagai varian berat. Font ini memberikan kesan modern, bersahabat, dan sangat baik dalam hal keterbacaan di layar digital. Nunito sering digunakan untuk situs pendidikan, startup teknologi, dan dashboard aplikasi karena tampilannya yang seimbang dan mudah dicerna.
                 </p>
             </div>
         </div>
@@ -132,7 +133,8 @@
                         JPEG
                     </h3>
                     <img alt="Contoh format gambar JPEG" class="my-4" src="img/cat.jpeg" width="300" height="200" />
-                    <p>
+                    <p class="my-2">
+                        JPEG adalah format gambar lossy compression yang paling banyak digunakan di dunia. Format ini mengompres data citra dengan mengurangi detail halus yang tidak terlalu terlihat oleh mata manusia, sehingga menghasilkan ukuran file yang lebih kecil. JPEG sangat cocok untuk fotografi digital dan gambar dengan gradasi warna kompleks, tetapi tidak mendukung transparansi. Dalam sistem multimedia, JPEG sangat efisien untuk web dan presentasi karena keseimbangan antara kualitas dan ukuran file.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
@@ -140,15 +142,17 @@
                         PNG
                     </h3>
                     <img alt="Contoh format gambar PNG" class="my-4" src="img/cat.png" width="300" height="200" />
-                    <p>
+                    <p class="my-2">
+                        PNG adalah format lossless yang mendukung transparansi (alpha channel) dan banyak digunakan untuk grafik web, logo, serta ikon. Berbeda dengan JPEG, PNG tidak menghilangkan detail gambar, membuatnya ideal untuk gambar dengan area warna solid dan teks. Meski ukuran filenya cenderung lebih besar, PNG tetap menjadi pilihan utama dalam desain antarmuka pengguna karena kualitas dan kejelasannya yang tinggi.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         GIF
                     </h3>
-                    <img alt="Contoh format gambar GIF" class="my-4" src="img/cat.gif" width="300" height="200" />
-                    <p>
+                    <img alt="Contoh format gambar GIF" class="my-4" src="img/image.gif" width="300" height="200" />
+                    <p class="my-2">
+                        GIF adalah format gambar 8-bit yang mendukung animasi dan transparansi sederhana. Format ini sangat populer untuk membuat animasi pendek di media sosial dan web karena kemampuannya menyimpan banyak frame dalam satu file. Namun, keterbatasannya pada 256 warna membuatnya tidak ideal untuk foto atau gambar beresolusi tinggi. Dalam sistem multimedia, GIF sering digunakan untuk elemen visual interaktif dan ekspresif.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
@@ -157,6 +161,7 @@
                     </h3>
                     <img alt="Contoh format gambar BMP" class="my-4" src="img/cat.bmp" width="300" height="200" />
                     <p>
+                        BMP adalah format gambar raster yang menyimpan data piksel secara langsung tanpa kompresi. Karena sifatnya yang tidak terkompresi, file BMP berukuran sangat besar, tetapi menyediakan kualitas gambar tinggi. Format ini jarang digunakan di web, tetapi tetap digunakan dalam aplikasi Windows untuk menyimpan citra mentah. Dalam multimedia, BMP dapat berguna untuk pengolahan gambar tahap awal atau penggunaan teknis lokal.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
@@ -165,6 +170,7 @@
                     </h3>
                     <img alt="Contoh format gambar TIFF" class="my-4" src="img/cat.tiff" width="300" height="200" />
                     <p>
+                        TIFF adalah format gambar beresolusi tinggi yang banyak digunakan dalam bidang pencitraan profesional seperti percetakan, pemindaian, dan fotografi digital. Format ini mendukung kompresi lossless, multi-layer, dan metadata lengkap. Karena fleksibilitas dan presisinya, TIFF sangat dihargai dalam arsip dokumen dan pemrosesan citra medis atau geografis.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
@@ -173,6 +179,7 @@
                     </h3>
                     <img alt="Contoh format gambar SVG" class="my-4" src="img/cat.svg" width="300" height="200" />
                     <p>
+                        SVG adalah format gambar berbasis vektor yang menggunakan XML untuk mendeskripsikan grafik dua dimensi. Tidak seperti format raster, SVG dapat diskalakan tanpa kehilangan kualitas. SVG sangat populer untuk ikon, ilustrasi, dan grafik interaktif dalam pengembangan web karena mendukung animasi, CSS styling, dan interaktivitas JavaScript.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
@@ -181,6 +188,7 @@
                     </h3>
                     <img alt="Contoh format gambar WEBP" class="my-4" src="img/cat.webp" width="300" height="200" />
                     <p>
+                        WebP adalah format gambar modern yang dikembangkan oleh Google untuk web. WebP menawarkan kompresi baik lossy maupun lossless, mendukung transparansi (alpha), dan animasi, menjadikannya pengganti JPEG, PNG, dan GIF secara bersamaan. Ukuran filenya biasanya lebih kecil hingga 30% dibanding JPEG atau PNG dengan kualitas serupa, membuat WebP sangat efisien untuk kecepatan muat halaman.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
@@ -189,6 +197,7 @@
                     </h3>
                     <img alt="Contoh format gambar HEIC" class="my-4" src="img/cat.heic" width="300" height="200" />
                     <p>
+                        HEIC adalah format gambar baru yang berbasis HEVC (High Efficiency Video Coding) dan digunakan oleh Apple di perangkat iOS dan macOS. Format ini menawarkan kualitas gambar tinggi dengan ukuran file yang lebih kecil dibanding JPEG. HEIC juga mendukung penyimpanan beberapa gambar dalam satu file (seperti burst mode) serta transparansi dan metadata yang kaya. Namun, keterbatasannya adalah kurangnya dukungan di platform non-Apple.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
@@ -197,6 +206,7 @@
                     </h3>
                     <img alt="Contoh format gambar AVIF" class="my-4" src="img/cat.avif" width="300" height="200" />
                     <p>
+                        AVIF adalah format gambar modern berbasis AV1 codec (AOMedia Video 1) yang dikembangkan oleh Alliance for Open Media. Format ini dirancang untuk menggantikan JPEG dan WebP dalam konteks distribusi gambar web beresolusi tinggi. AVIF mendukung kompresi lossy dan lossless, transparansi, HDR, animasi, serta metadata yang kaya, menjadikannya salah satu format paling canggih saat ini. Keunggulan utama AVIF adalah efisiensi kompresi yang luar biasa, mampu menghasilkan gambar dengan kualitas sangat tinggi dan ukuran file lebih kecil daripada JPEG dan WebP. AVIF juga mendukung fitur-fitur canggih seperti depth map, film grain, dan 10-bit color.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
@@ -205,12 +215,13 @@
                     </h3>
                     <img alt="Contoh format gambar PSD" class="my-4" src="img/cat.psd" width="300" height="200" />
                     <p>
+                        PSD adalah format file native untuk Adobe Photoshop yang menyimpan data gambar beserta semua lapisan (layers), efek, teks, dan mask. PSD memungkinkan fleksibilitas editing yang sangat tinggi dan digunakan luas dalam desain grafis profesional. File PSD biasanya digunakan dalam proses kreatif sebelum diekspor ke format lain seperti JPEG, PNG, atau PDF untuk distribusi.
                     </p>
                 </div>
             </div>
         </section>
         <div class="mt-8">
-            <h2 class="text-2xl font-bold text-center mb-4">10 Format Audio Populer</h2>
+            <h2 class="text-3xl font-bold text-center mb-8">Format Audio Populer</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MP3</h3>
@@ -218,6 +229,9 @@
                         <source src="audio/audio.mp3" type="audio/mpeg">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        MP3 adalah format audio yang sangat terkenal dan telah menjadi standar industri sejak era digital musik dimulai. Format ini dikenal karena kemampuannya mengecilkan ukuran file tanpa mengorbankan kualitas suara secara signifikan. MP3 banyak digunakan untuk lagu, podcast, dan konten audio lainnya karena hemat ruang dan efisien untuk streaming. Format ini cocok untuk hampir semua kebutuhan multimedia karena fleksibilitas dan efisiensinya.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">AAC</h3>
@@ -225,6 +239,9 @@
                         <source src="audio/audio.aac" type="audio/aac">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        AAC adalah format audio digital yang dirancang sebagai penerus MP3 dengan kualitas suara yang lebih baik pada ukuran file yang lebih kecil. Format ini banyak digunakan dalam platform streaming musik dan video karena mampu menghasilkan suara yang jernih dan bersih, bahkan pada bitrate rendah. AAC populer untuk konten hiburan karena kualitas audionya yang tinggi dalam file berukuran ringan.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">OGG</h3>
@@ -232,6 +249,9 @@
                         <source src="audio/audio.ogg" type="audio/ogg">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        OGG adalah format audio terbuka yang tidak terikat lisensi, menjadikannya pilihan populer bagi pengembang dan pengguna yang mengutamakan kebebasan distribusi. Format ini sering digunakan untuk musik, efek suara, dan rekaman karena menawarkan kualitas suara tinggi dan ukuran file yang ringkas. OGG menjadi favorit di komunitas open-source karena performa dan keterbukaannya.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">WAV</h3>
@@ -239,6 +259,9 @@
                         <source src="audio/audio.wav" type="audio/wav">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        WAV adalah format audio mentah yang menyimpan suara dalam kualitas asli tanpa kompresi. Karena tidak dikompresi, ukuran filenya sangat besar, namun kualitas suaranya sangat jernih. WAV sering digunakan dalam aplikasi profesional seperti rekaman studio, editing suara, atau efek audio yang membutuhkan presisi tinggi.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">FLAC</h3>
@@ -246,13 +269,19 @@
                         <source src="audio/audio.flac" type="audio/flac">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        FLAC adalah format yang mempertahankan kualitas audio asli tanpa kehilangan data, tetapi tetap mengompresi ukuran file. Hasilnya, kualitas suaranya setara dengan WAV namun ukuran filenya lebih kecil. FLAC sering digunakan oleh pecinta musik dan profesional audio yang ingin menyimpan arsip rekaman dalam kualitas tinggi.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Opus</h3>
                     <audio controls>
-                        <source src="audio/" type="audio/opus">
+                        <source src="audio/audio.opus" type="audio/opus">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        Opus dirancang khusus untuk komunikasi suara dan musik real-time seperti panggilan suara, konferensi, dan streaming langsung. Format ini terkenal karena fleksibilitasnya dalam menyesuaikan kualitas secara otomatis sesuai kondisi jaringan. Suara tetap terdengar jelas meskipun koneksi internet tidak stabil, menjadikannya sangat ideal untuk aplikasi interaktif.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">WebM</h3>
@@ -260,6 +289,9 @@
                         <source src="audio/audio.webm" type="audio/webm">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        WebM adalah format yang dirancang untuk media digital modern, khususnya audio dan video di web. Audio dalam format WebM biasanya dikodekan menggunakan codec seperti Opus atau Vorbis. Format ini banyak digunakan dalam aplikasi online untuk menyimpan dan menyampaikan suara yang ringan dan jernih.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">M4A</h3>
@@ -267,13 +299,19 @@
                         <source src="audio/audio.m4a" type="audio/mp4">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        M4A adalah format kontainer audio yang umum digunakan untuk menyimpan lagu dan rekaman berkualitas tinggi. Format ini sering kali menggunakan codec AAC untuk mengompres suara dengan efisien, sehingga menghasilkan kualitas tinggi dalam ukuran file yang relatif kecil. M4A populer untuk distribusi lagu digital dan podcast.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MIDI</h3>
                     <audio controls>
-                        <source src="https://file-examples.com/wp-content/uploads/2017/11/file_example_MIDI_1file.mid" type="audio/midi">
+                        <source src="audio/audio.mid" type="audio/midi">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        MIDI bukan format rekaman suara seperti lainnya, melainkan format yang menyimpan data musik berupa instruksi digital, seperti not, tempo, dan jenis instrumen. Format ini sering digunakan dalam komposisi musik digital, aplikasi piano virtual, dan permainan musik, karena ukuran file yang sangat kecil dan kemampuan untuk diubah-ubah dengan mudah.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">AIFF</h3>
@@ -281,88 +319,203 @@
                         <source src="audio/audio.aiff" type="audio/aiff">
                         Your browser does not support the audio element.
                     </audio>
+                    <p class="my-2">
+                        AIFF adalah format audio berkualitas tinggi yang dikembangkan oleh Apple. Seperti WAV, AIFF menyimpan suara tanpa kompresi, menjadikannya ideal untuk rekaman musik dan audio profesional. Format ini biasanya digunakan dalam lingkungan produksi musik atau editing suara di mana kualitas suara adalah prioritas utama.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="mt-8">
-            <h2 class="text-2xl font-bold text-center mb-4">10 Format Video Populer</h2>
+            <h2 class="text-3xl font-bold text-center mb-8">Format Video Populer</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MP4</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
+                        <source src="https://file-examples.com/storage/fe0d4ef3b467fe96a99bd97/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        MP4 adalah format video paling umum dan serbaguna yang digunakan di berbagai platform, termasuk situs web. Format ini mampu menyimpan video, audio, subtitle, dan gambar dalam satu file, membuatnya sangat efisien untuk keperluan distribusi multimedia. MP4 sangat populer karena kualitas videonya yang baik dengan ukuran file yang tidak terlalu besar, cocok untuk streaming, presentasi, dan video edukatif.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">WebM</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_WEBM_480_900KB.webm" type="video/webm">
+                        <source src="https://file-examples.com/storage/fe0d4ef3b467fe96a99bd97/2020/03/file_example_WEBM_480_900KB.webm" type="video/webm">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        WebM adalah format video yang dirancang untuk efisiensi pemutaran video di internet. Format ini memiliki ukuran file yang relatif kecil namun tetap menyajikan kualitas visual yang baik. WebM banyak digunakan untuk konten video yang memerlukan pemuatan cepat seperti cuplikan singkat, tutorial online, atau video promosi digital.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">AVI</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_AVI_480_750kB.avi" type="video/x-msvideo">
+                        <source src="video/file_example_MP4_480_1_5MG.avi" type="video/x-msvideo">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        AVI adalah format video yang sudah lama digunakan dan dikenal karena kemampuannya menyimpan video dan audio dalam kualitas tinggi. Meskipun ukurannya cenderung besar, AVI sering digunakan dalam konteks penyuntingan video atau distribusi lokal di mana kualitas lebih diutamakan daripada ukuran file.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MOV</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_MOV_480_700kB.mov" type="video/quicktime">
+                        <source src="video/file_example_MP4_480_1_5MG.mov" type="video/quicktime">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        MOV adalah format video buatan Apple yang sering digunakan dalam produksi film dan video profesional. Format ini mendukung berbagai jenis media dan sering digunakan dalam pengeditan video karena mendukung kualitas tinggi. MOV cocok untuk video presentasi, dokumenter, dan materi promosi dalam kualitas yang lebih sinematik.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MKV</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_MKV_480_1_5MG.mkv" type="video/x-matroska">
+                        <source src="video/file_example_MP4_480_1_5MG.mkv" type="video/x-matroska">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        MKV adalah format kontainer multimedia yang fleksibel dan dapat menyimpan berbagai jenis konten seperti video, audio, subtitle, dan metadata. Format ini sangat cocok untuk menyimpan film atau serial dengan banyak subtitle dan trek audio. MKV banyak digunakan dalam distribusi digital karena fleksibilitas dan dukungan terhadap file berkualitas tinggi.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">FLV</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_FLV_480_700kB.flv" type="video/x-flv">
+                        <source src="video/file_example_MP4_480_1_5MG.flv" type="video/x-flv">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        FLV dulunya sangat populer untuk video online, terutama di era Flash Player. Format ini ringan dan dirancang khusus untuk streaming video melalui internet. Walau kini tidak lagi menjadi pilihan utama karena teknologi Flash mulai ditinggalkan, FLV masih dikenang sebagai pionir dalam penyebaran video online.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">3GP</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_3GP_480_1_5mg.3gp" type="video/3gpp">
+                        <source src="video/file_example_MP4_480_1_5MG.3gp" type="video/3gpp">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        3GP adalah format video yang awalnya dirancang untuk perangkat mobile dengan keterbatasan penyimpanan dan kekuatan pemrosesan. Format ini memiliki ukuran file yang sangat kecil, sehingga cocok untuk pesan video singkat atau pengiriman melalui jaringan seluler. Meskipun sederhana, 3GP tetap menjadi pilihan untuk sistem yang ringan dan cepat.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">M4V</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_M4V_480_700kB.m4v" type="video/x-m4v">
+                        <source src="video/file_example_MP4_480_1_5MG.m4v" type="video/x-m4v">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        M4V adalah format video yang mirip dengan MP4 dan sering digunakan dalam layanan digital seperti iTunes. Format ini umumnya digunakan untuk menyimpan film atau acara televisi dalam kualitas tinggi. M4V mendukung berbagai fitur tambahan seperti DRM dan subtitle, menjadikannya ideal untuk konten berlisensi dan distribusi video resmi.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">WMV</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_WMV_480_750kB.wmv" type="video/x-ms-wmv">
+                        <source src="video/file_example_MP4_480_1_5MG.wmv" type="video/x-ms-wmv">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        WMV adalah format video yang dikembangkan oleh Microsoft untuk menyimpan video dalam ukuran kecil dengan kualitas yang tetap baik. Format ini banyak digunakan untuk presentasi bisnis, video tutorial, dan distribusi internal perusahaan karena integrasinya yang baik dengan perangkat lunak Windows.
+                    </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
-                    <h3 class="text-xl font-bold">AVI</h3>
+                    <h3 class="text-xl font-bold">ogv</h3>
                     <video controls class="w-full">
-                        <source src="https://file-examples.com/wp-content/uploads/2018/04/file_example_AVI_480_750kB.avi" type="video/x-msvideo">
+                        <source src="video/file_example_MP4_480_1_5MG.ogv" type="video/x-msvideo">
                         Your browser does not support the video element.
                     </video>
+                    <p class="my-2">
+                        OGV adalah format video yang merupakan bagian dari keluarga format Ogg. Ia biasanya dikompresi menggunakan codec Theora dan bersifat open-source. Format ini populer di kalangan pengembang web yang mengutamakan kebebasan distribusi tanpa batasan lisensi. OGV digunakan untuk video edukasi, dokumentasi open-source, atau situs-situs yang ingin menjunjung kebebasan format terbuka. Meskipun ukuran filenya tidak selalu seefisien MP4 atau WebM, OGV tetap dihargai karena sifat terbukanya dan fleksibilitasnya untuk eksperimen multimedia.
+                    </p>
                 </div>
             </div>
         </div>
         <div class="mt-8">
-            <h2 class="text-2xl font-bold text-center mb-4">File Laporan</h2>
+            <h2 class="text-3xl font-bold text-center mb-8">Macam-macam Animasi Populer</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Cell Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/I5pG1wbRKOg?start=25&amp;end=30"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Cell animation, atau disebut juga traditional animation, adalah teknik klasik dalam dunia animasi yang menggunakan lembaran transparan (celluloid) untuk menggambar karakter dan elemen latar. Setiap gerakan digambar manual frame demi frame, lalu difoto secara berurutan untuk menghasilkan ilusi gerakan. Teknik ini membutuhkan ketelitian tinggi karena setiap detail digambar ulang di tiap frame. Meski memakan waktu, hasilnya sangat ekspresif dan berkarakter.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Frame Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/CtO_XE2Nrho" title="[I M P A C T / F R A M E S]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Frame animation adalah metode dasar dalam pembuatan animasi, di mana setiap gambar/frame adalah satu unit gerakan dalam urutan yang berkesinambungan. Metode ini dapat digunakan baik dalam bentuk tradisional maupun digital, seperti membuat GIF animasi, atau dalam timeline aplikasi desain seperti Adobe Animate. Karena tiap frame berdiri sendiri, animator memiliki fleksibilitas tinggi dalam mengekspresikan perubahan posisi atau emosi objek.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Sprite Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/oLB0J4FwrFQ" title="SONIC SWAY (Sparking Zero Sprite Animation)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Sprite animation merupakan teknik populer dalam game 2D di mana gambar datar (sprite) digunakan untuk merepresentasikan karakter, musuh, atau objek. Pergerakan diciptakan dengan menampilkan sprite yang berbeda dalam waktu singkat, menciptakan kesan karakter sedang berjalan, melompat, atau menyerang. Teknik ini sangat efisien karena menggunakan sprite sheet yang bisa diatur secara terprogram.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Path Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/o1gg6HnUnYI?rel=0&amp;&mute=1" title="Move Any Object or Text Along Path In Alight Motion - Beginner Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Path animation adalah teknik di mana objek bergerak mengikuti jalur (path) yang telah ditentukan, seperti garis melengkung atau lintasan zigzag. Objek yang dimaksud bisa berupa teks, ikon, atau karakter. Teknik ini banyak digunakan dalam presentasi interaktif, animasi vektor, serta motion graphics, karena memungkinkan pergerakan halus dan dinamis yang mengikuti alur tertentu.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Spline Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/7Tu0hYR5r7s?start=450&amp;end=496"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Spline animation menggunakan garis kurva spline untuk mengatur pergerakan objek secara halus dan presisi. Dibandingkan path biasa, spline memungkinkan manipulasi titik-titik kontrol untuk menghasilkan gerakan yang lebih alami dan realistis. Biasanya digunakan dalam animasi 3D atau gerakan kamera dalam simulasi.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Vector Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/fZiIfM64IkQ" title="Vector Based Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Vector animation dibuat dengan memanfaatkan gambar berbasis vektor yang bersifat skalabel tanpa kehilangan kualitas. Elemen-elemen seperti garis, bentuk, dan kurva bisa dianimasikan secara halus dan ringan, menjadikannya populer dalam konten web dan aplikasi mobile. Vector animation sangat efisien dari sisi ukuran file dan performa, ideal untuk animasi antarmuka.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Character Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/_U0uxbw5h9w" title="Character Animation - Tails" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Character animation memfokuskan pada pembuatan gerakan karakter agar terlihat hidup dan emosional. Proses ini melibatkan pembuatan pose, ekspresi wajah, dan gestur tubuh yang meyakinkan, baik dalam animasi 2D maupun 3D. Biasanya karakter ini digunakan dalam film animasi, game, dan media interaktif.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Computational Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/UPhx-h4j-Zo" title="Catheter Computational Fluid Dynamics Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Computational animation adalah jenis animasi yang diciptakan melalui algoritma atau pemrograman. Biasanya digunakan untuk menciptakan gerakan otomatis atau reaktif, misalnya dalam visualisasi data, simulasi fisika, atau efek procedural. Animator tidak perlu menggambar setiap frame, melainkan mengatur aturan gerakan yang dilakukan komputer.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Morphing</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/SQ-aJxL_m-4" title="Animation assignment } Morphing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Morphing adalah teknik yang memungkinkan satu bentuk atau gambar berubah secara bertahap menjadi bentuk lain. Transisi ini menciptakan efek visual yang halus dan sering kali dramatis. Teknik ini sering digunakan dalam efek video, film fiksi ilmiah, dan transformasi wajah dalam video musik atau iklan.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Clay Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/DnlZWynGE0Q" title="Police Search at West Wallaby Street 🚨 | Film Clip 🐧 | Wallace &amp; Gromit: Vengeance Most Fowl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Clay animation, atau claymation, adalah bentuk animasi stop-motion di mana karakter dibuat dari tanah liat dan dipindahkan sedikit demi sedikit untuk setiap frame. Setiap gerakan difoto secara manual, menciptakan ilusi gerak saat dimainkan secara berurutan. Teknik ini unik karena memberikan tampilan kasar yang khas namun artistik.
+                    </p>
+                </div>
+                <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
+                    <h3 class="text-xl font-bold">Digital Animation</h3>
+                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/fvbEnWLRo1s?start=25&amp;end=524" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p class="my-2">
+                        Digital animation adalah istilah umum untuk semua bentuk animasi yang dibuat menggunakan komputer, termasuk 2D, 3D, dan motion graphics. Dengan software seperti Adobe Animate, After Effects, Blender, dan Maya, animator dapat membuat animasi kompleks dengan efisiensi tinggi. Jenis ini adalah yang paling dominan dalam dunia multimedia saat ini.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8">
+            <h2 class="text-3xl font-bold text-center mb-8">File Laporan</h2>
             <div class="flex justify-center">
-                <embed src="draft tugas uts multimedia.pdf" type="application/pdf" width="80%" height="600px" />
+                <embed src="GUSTI PANJI WIDODO - 2407113145 - TEKNIK INFORMATIKA A - LAPORAN UTS SISTEM MULTIMEDIA.pdf" type="application/pdf" width="80%" height="600px" />
             </div>
         </div>
     </main>
