@@ -330,7 +330,7 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MP4</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="https://file-examples.com/storage/fe0d4ef3b467fe96a99bd97/2017/04/file_example_MP4_480_1_5MG.mp4" type="video/mp4">
                         Your browser does not support the video element.
                     </video>
@@ -340,7 +340,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">WebM</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="https://file-examples.com/storage/fe0d4ef3b467fe96a99bd97/2020/03/file_example_WEBM_480_900KB.webm" type="video/webm">
                         Your browser does not support the video element.
                     </video>
@@ -350,7 +350,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">AVI</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="video/file_example_MP4_480_1_5MG.avi" type="video/x-msvideo">
                         Your browser does not support the video element.
                     </video>
@@ -360,7 +360,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MOV</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="video/file_example_MP4_480_1_5MG.mov" type="video/quicktime">
                         Your browser does not support the video element.
                     </video>
@@ -370,7 +370,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MKV</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="video/file_example_MP4_480_1_5MG.mkv" type="video/x-matroska">
                         Your browser does not support the video element.
                     </video>
@@ -380,7 +380,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">FLV</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="video/file_example_MP4_480_1_5MG.flv" type="video/x-flv">
                         Your browser does not support the video element.
                     </video>
@@ -390,7 +390,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">3GP</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="video/file_example_MP4_480_1_5MG.3gp" type="video/3gpp">
                         Your browser does not support the video element.
                     </video>
@@ -400,7 +400,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">M4V</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="video/file_example_MP4_480_1_5MG.m4v" type="video/x-m4v">
                         Your browser does not support the video element.
                     </video>
@@ -410,7 +410,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">WMV</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="video/file_example_MP4_480_1_5MG.wmv" type="video/x-ms-wmv">
                         Your browser does not support the video element.
                     </video>
@@ -420,7 +420,7 @@
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">ogv</h3>
-                    <video controls class="w-full">
+                    <video class="w-full" autoplay="true" muted>
                         <source src="video/file_example_MP4_480_1_5MG.ogv" type="video/x-msvideo">
                         Your browser does not support the video element.
                     </video>
@@ -435,77 +435,109 @@
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Cell Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/I5pG1wbRKOg?start=25&amp;end=30"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/cellanim.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Cell animation, atau disebut juga traditional animation, adalah teknik klasik dalam dunia animasi yang menggunakan lembaran transparan (celluloid) untuk menggambar karakter dan elemen latar. Setiap gerakan digambar manual frame demi frame, lalu difoto secara berurutan untuk menghasilkan ilusi gerakan. Teknik ini membutuhkan ketelitian tinggi karena setiap detail digambar ulang di tiap frame. Meski memakan waktu, hasilnya sangat ekspresif dan berkarakter.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Frame Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/CtO_XE2Nrho" title="[I M P A C T / F R A M E S]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/frame.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Frame animation adalah metode dasar dalam pembuatan animasi, di mana setiap gambar/frame adalah satu unit gerakan dalam urutan yang berkesinambungan. Metode ini dapat digunakan baik dalam bentuk tradisional maupun digital, seperti membuat GIF animasi, atau dalam timeline aplikasi desain seperti Adobe Animate. Karena tiap frame berdiri sendiri, animator memiliki fleksibilitas tinggi dalam mengekspresikan perubahan posisi atau emosi objek.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Sprite Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/oLB0J4FwrFQ" title="SONIC SWAY (Sparking Zero Sprite Animation)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/sprite.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Sprite animation merupakan teknik populer dalam game 2D di mana gambar datar (sprite) digunakan untuk merepresentasikan karakter, musuh, atau objek. Pergerakan diciptakan dengan menampilkan sprite yang berbeda dalam waktu singkat, menciptakan kesan karakter sedang berjalan, melompat, atau menyerang. Teknik ini sangat efisien karena menggunakan sprite sheet yang bisa diatur secara terprogram.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Path Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/o1gg6HnUnYI?rel=0&amp;&mute=1" title="Move Any Object or Text Along Path In Alight Motion - Beginner Tutorial" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/path.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Path animation adalah teknik di mana objek bergerak mengikuti jalur (path) yang telah ditentukan, seperti garis melengkung atau lintasan zigzag. Objek yang dimaksud bisa berupa teks, ikon, atau karakter. Teknik ini banyak digunakan dalam presentasi interaktif, animasi vektor, serta motion graphics, karena memungkinkan pergerakan halus dan dinamis yang mengikuti alur tertentu.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Spline Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/7Tu0hYR5r7s?start=450&amp;end=496"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/splining.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Spline animation menggunakan garis kurva spline untuk mengatur pergerakan objek secara halus dan presisi. Dibandingkan path biasa, spline memungkinkan manipulasi titik-titik kontrol untuk menghasilkan gerakan yang lebih alami dan realistis. Biasanya digunakan dalam animasi 3D atau gerakan kamera dalam simulasi.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Vector Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/fZiIfM64IkQ" title="Vector Based Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/vector.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Vector animation dibuat dengan memanfaatkan gambar berbasis vektor yang bersifat skalabel tanpa kehilangan kualitas. Elemen-elemen seperti garis, bentuk, dan kurva bisa dianimasikan secara halus dan ringan, menjadikannya populer dalam konten web dan aplikasi mobile. Vector animation sangat efisien dari sisi ukuran file dan performa, ideal untuk animasi antarmuka.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Character Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/_U0uxbw5h9w" title="Character Animation - Tails" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/character.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Character animation memfokuskan pada pembuatan gerakan karakter agar terlihat hidup dan emosional. Proses ini melibatkan pembuatan pose, ekspresi wajah, dan gestur tubuh yang meyakinkan, baik dalam animasi 2D maupun 3D. Biasanya karakter ini digunakan dalam film animasi, game, dan media interaktif.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Computational Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/UPhx-h4j-Zo" title="Catheter Computational Fluid Dynamics Animation" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/computational.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Computational animation adalah jenis animasi yang diciptakan melalui algoritma atau pemrograman. Biasanya digunakan untuk menciptakan gerakan otomatis atau reaktif, misalnya dalam visualisasi data, simulasi fisika, atau efek procedural. Animator tidak perlu menggambar setiap frame, melainkan mengatur aturan gerakan yang dilakukan komputer.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Morphing</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/SQ-aJxL_m-4" title="Animation assignment } Morphing" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/morphing.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Morphing adalah teknik yang memungkinkan satu bentuk atau gambar berubah secara bertahap menjadi bentuk lain. Transisi ini menciptakan efek visual yang halus dan sering kali dramatis. Teknik ini sering digunakan dalam efek video, film fiksi ilmiah, dan transformasi wajah dalam video musik atau iklan.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Clay Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/DnlZWynGE0Q" title="Police Search at West Wallaby Street 🚨 | Film Clip 🐧 | Wallace &amp; Gromit: Vengeance Most Fowl" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                    <p class="my-2">
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/claymation.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                         Clay animation, atau claymation, adalah bentuk animasi stop-motion di mana karakter dibuat dari tanah liat dan dipindahkan sedikit demi sedikit untuk setiap frame. Setiap gerakan difoto secara manual, menciptakan ilusi gerak saat dimainkan secara berurutan. Teknik ini unik karena memberikan tampilan kasar yang khas namun artistik.
                     </p>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Digital Animation</h3>
-                    <iframe class="w-full h-52" loading="lazy" src="https://www.youtube.com/embed/fvbEnWLRo1s?start=25&amp;end=524" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <video class="w-full" autoplay="true" muted loop>
+                        <source src="video/Recording 2025-04-18 195536.mp4" type="video/mp4">
+                        Your browser does not support the video element.
+                    </video>
                     <p class="my-2">
                         Digital animation adalah istilah umum untuk semua bentuk animasi yang dibuat menggunakan komputer, termasuk 2D, 3D, dan motion graphics. Dengan software seperti Adobe Animate, After Effects, Blender, dan Maya, animator dapat membuat animasi kompleks dengan efisiensi tinggi. Jenis ini adalah yang paling dominan dalam dunia multimedia saat ini.
                     </p>
@@ -515,7 +547,7 @@
         <div class="mt-8">
             <h2 class="text-3xl font-bold text-center mb-8">File Laporan</h2>
             <div class="flex justify-center">
-                <embed src="GUSTI PANJI WIDODO - 2407113145 - TEKNIK INFORMATIKA A - LAPORAN UTS SISTEM MULTIMEDIA.pdf" type="application/pdf" width="80%" height="600px" />
+                <embed onload="this.style.display='block';" src="GUSTI PANJI WIDODO - 2407113145 - TEKNIK INFORMATIKA A - LAPORAN UTS SISTEM MULTIMEDIA.pdf" type="application/pdf" width="80%" height="600px" />
             </div>
         </div>
     </main>
