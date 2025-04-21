@@ -280,8 +280,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        MP3 adalah format audio yang sangat terkenal dan telah menjadi standar industri sejak era digital musik dimulai. Format ini dikenal karena kemampuannya mengecilkan ukuran file tanpa mengorbankan kualitas suara secara signifikan. MP3 banyak digunakan untuk lagu, podcast, dan konten audio lainnya karena hemat ruang dan efisien untuk streaming. Format ini cocok untuk hampir semua kebutuhan multimedia karena fleksibilitas dan efisiensinya.
+                        MP3 adalah format audio lossy berbasis kompresi psychoacoustic (MPEG-1/2 Layer 3) yang mengurangi ukuran file hingga 75-90% dari sumber aslinya (CD quality) dengan memangkas frekuensi kurang terdengar. Mendukung bitrate 8-320 kbps, sample rate 16-48 kHz, dan channel stereo/mono. Kompatibilitas universal di semua perangkat dan platform.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Ukuran file kecil dengan kualitas relatif baik; didukung secara luas di seluruh perangkat.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Kehilangan detail audio dibanding format lossless; tidak mendukung metadata lengkap seperti format modern.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Musik digital, podcast, streaming, ringtone.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">AAC</h3>
@@ -290,8 +295,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        AAC adalah format audio digital yang dirancang sebagai penerus MP3 dengan kualitas suara yang lebih baik pada ukuran file yang lebih kecil. Format ini banyak digunakan dalam platform streaming musik dan video karena mampu menghasilkan suara yang jernih dan bersih, bahkan pada bitrate rendah. AAC populer untuk konten hiburan karena kualitas audionya yang tinggi dalam file berukuran ringan.
+                        AAC adalah format audio lossy generasi lanjut dari MP3, menggunakan kompresi berbasis transformasi frekuensi untuk efisiensi tinggi pada bitrate rendah. Mendukung bitrate 8–529 kbps, sample rate 8–96 kHz, hingga 48 channel audio. Kompatibel luas di perangkat modern, termasuk iOS, Android, dan layanan streaming.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kualitas suara lebih baik dari MP3 pada ukuran file yang sama; efisien untuk streaming dan didukung banyak platform.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Masih lossy, sehingga tidak cocok untuk arsip kualitas tinggi; dukungan terbatas pada perangkat lama.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Streaming musik dan video, podcast, siaran digital, penyimpanan audio.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">OGG</h3>
@@ -300,8 +310,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        OGG adalah format audio terbuka yang tidak terikat lisensi, menjadikannya pilihan populer bagi pengembang dan pengguna yang mengutamakan kebebasan distribusi. Format ini sering digunakan untuk musik, efek suara, dan rekaman karena menawarkan kualitas suara tinggi dan ukuran file yang ringkas. OGG menjadi favorit di komunitas open-source karena performa dan keterbukaannya.
+                        OGG adalah format audio kontainer terbuka yang biasanya menggunakan kompresi lossy (Vorbis) atau lossless (FLAC). Mendukung bitrate dinamis (biasanya 64-500 kbps untuk Vorbis), sample rate hingga 192 kHz, dan multi-channel audio. Ukuran file lebih kecil dibanding MP3 dengan kualitas setara, namun kompatibilitas perangkat terbatas dibanding format proprietary.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kualitas audio lebih baik daripada MP3 pada bitrate sama; bebas lisensi dan open-source.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Dukungan perangkat lebih terbatas; kurang optimal untuk streaming.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Musik digital, game, aplikasi open-source.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">WAV</h3>
@@ -310,8 +325,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        WAV adalah format audio mentah yang menyimpan suara dalam kualitas asli tanpa kompresi. Karena tidak dikompresi, ukuran filenya sangat besar, namun kualitas suaranya sangat jernih. WAV sering digunakan dalam aplikasi profesional seperti rekaman studio, editing suara, atau efek audio yang membutuhkan presisi tinggi.
+                        WAV adalah format audio mentah yang tidak mengalami kompresi, menghasilkan file dengan ukuran besar namun kualitas suara yang sangat jernih. Format ini umumnya menggunakan kedalaman bit 16-bit hingga 32-bit dan dapat mendukung hingga 192 kHz untuk frekuensi sampel. WAV tidak mendukung animasi atau transparansi karena hanya menyimpan data audio. Format ini sangat kompatibel di berbagai perangkat dan aplikasi profesional seperti rekaman studio dan editing suara.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kualitas suara yang sangat tinggi dan kompatibilitas luas</li>
+                        <li><span class="font-bold">Kekurangan : </span>Ukuran file yang sangat besar, memerlukan ruang penyimpanan lebih banyak.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Rekaman suara, produksi audio profesional, efek suara.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">FLAC</h3>
@@ -320,8 +340,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        FLAC adalah format yang mempertahankan kualitas audio asli tanpa kehilangan data, tetapi tetap mengompresi ukuran file. Hasilnya, kualitas suaranya setara dengan WAV namun ukuran filenya lebih kecil. FLAC sering digunakan oleh pecinta musik dan profesional audio yang ingin menyimpan arsip rekaman dalam kualitas tinggi.
+                        FLAC adalah format audio kompresi tanpa kehilangan data yang mempertahankan kualitas suara setara dengan WAV, tetapi dengan ukuran file yang lebih kecil. Format ini menggunakan kompresi berbasis algoritma yang memungkinkan pengurangan ukuran file hingga 30-60% tanpa mengorbankan kualitas audio. FLAC mendukung kedalaman bit hingga 32-bit dan frekuensi sampel hingga 192 kHz, serta kompatibel dengan banyak perangkat dan aplikasi.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kualitas suara yang setara dengan WAV dengan ukuran file yang lebih kecil.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Tidak didukung secara universal di semua perangkat, terutama di beberapa pemutar perangkat keras.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Arsip musik, koleksi audio lossless, penyimpanan rekaman berkualitas tinggi.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">Opus</h3>
@@ -330,8 +355,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        Opus dirancang khusus untuk komunikasi suara dan musik real-time seperti panggilan suara, konferensi, dan streaming langsung. Format ini terkenal karena fleksibilitasnya dalam menyesuaikan kualitas secara otomatis sesuai kondisi jaringan. Suara tetap terdengar jelas meskipun koneksi internet tidak stabil, menjadikannya sangat ideal untuk aplikasi interaktif.
+                        Opus adalah format audio lossy yang dioptimalkan untuk real-time communication, menggunakan kompresi berbasis SILK (untuk suara) dan CELT (untuk musik). Mendukung bitrate dari 6 kbps hingga 510 kbps, sample rate 8-48 kHz, dan latency ultra-rendah (5-60ms). Ukuran file sangat efisien dengan kualitas superior pada bitrate rendah, kompatibel dengan sebagian besar browser modern dan aplikasi VoIP.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Performa unggul di jaringan tidak stabil; fleksibilitas bitrate dinamis untuk berbagai kebutuhan.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Tidak ideal untuk penyimpanan musik berkualitas tinggi; dukungan terbatas di perangkat lawas.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Panggilan VoIP, streaming live, konferensi online.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">WebM</h3>
@@ -340,8 +370,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        WebM adalah format yang dirancang untuk media digital modern, khususnya audio dan video di web. Audio dalam format WebM biasanya dikodekan menggunakan codec seperti Opus atau Vorbis. Format ini banyak digunakan dalam aplikasi online untuk menyimpan dan menyampaikan suara yang ringan dan jernih.
+                        WebM adalah format multimedia yang dirancang untuk digunakan di web, menyimpan audio dan video dengan efisiensi tinggi. Audio dalam WebM biasanya dikodekan menggunakan codec Opus atau Vorbis, yang menawarkan kualitas suara tinggi dengan ukuran file kecil. WebM mendukung video dengan kompresi VP8 atau VP9, dan mendukung transparansi melalui format video alpha channel. Format ini umumnya digunakan untuk streaming video dan audio di platform web.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kompresi efisien dengan kualitas tinggi dan dukungan untuk transparansi video.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Dukungan perangkat keras yang masih terbatas, meskipun dukungan di browser modern sudah luas.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Streaming video, media online, penyimpanan audio dan video ringan.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">M4A</h3>
@@ -350,8 +385,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        M4A adalah format kontainer audio yang umum digunakan untuk menyimpan lagu dan rekaman berkualitas tinggi. Format ini sering kali menggunakan codec AAC untuk mengompres suara dengan efisien, sehingga menghasilkan kualitas tinggi dalam ukuran file yang relatif kecil. M4A populer untuk distribusi lagu digital dan podcast.
+                        M4A adalah format kontainer audio yang umumnya menggunakan codec AAC untuk kompresi suara efisien, menghasilkan kualitas tinggi dengan ukuran file yang relatif kecil. Format ini mendukung kedalaman bit hingga 24-bit dan frekuensi sampel hingga 96 kHz. M4A populer untuk distribusi lagu digital dan podcast.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kompresi efisien yang menghasilkan file lebih kecil dengan kualitas suara tinggi.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Kompatibilitas terbatas di beberapa perangkat atau aplikasi yang lebih tua.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Distribusi musik digital, podcast, arsip rekaman audio berkualitas.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">MIDI</h3>
@@ -360,8 +400,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        MIDI bukan format rekaman suara seperti lainnya, melainkan format yang menyimpan data musik berupa instruksi digital, seperti not, tempo, dan jenis instrumen. Format ini sering digunakan dalam komposisi musik digital, aplikasi piano virtual, dan permainan musik, karena ukuran file yang sangat kecil dan kemampuan untuk diubah-ubah dengan mudah.
+                        MIDI adalah format yang menyimpan data musik berupa instruksi digital, seperti notasi, tempo, dan jenis instrumen, bukan rekaman suara. Format ini menghasilkan file yang sangat kecil karena hanya menyimpan informasi kontrol musik, bukan data audio. MIDI tidak mendukung kompresi atau transparansi karena fokus utamanya adalah data musik. Kompatibilitasnya sangat luas, digunakan dalam berbagai perangkat lunak musik dan perangkat keras.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Ukuran file yang sangat kecil dan kemudahan untuk dimodifikasi atau diubah.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Kualitas suara yang bergantung pada perangkat atau software pemutar, karena MIDI tidak menyimpan audio aktual.</li>
+                        <li><span class="font-bold">Kegunaan : </span> Komposisi musik digital, aplikasi piano virtual, permainan musik.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">AIFF</h3>
@@ -370,8 +415,13 @@
                         Your browser does not support the audio element.
                     </audio>
                     <p class="my-2">
-                        AIFF adalah format audio berkualitas tinggi yang dikembangkan oleh Apple. Seperti WAV, AIFF menyimpan suara tanpa kompresi, menjadikannya ideal untuk rekaman musik dan audio profesional. Format ini biasanya digunakan dalam lingkungan produksi musik atau editing suara di mana kualitas suara adalah prioritas utama.
+                        AIFF adalah format audio tanpa kompresi yang menyimpan suara dengan kualitas tinggi, mirip dengan WAV. Format ini menggunakan kedalaman bit 16-bit hingga 32-bit dan dapat mendukung frekuensi sampel hingga 192 kHz. AIFF lebih sering digunakan di platform Apple, meskipun juga kompatibel di banyak perangkat lainnya.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kualitas suara tinggi yang setara dengan WAV dan kompatibilitas dengan perangkat Apple.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Ukuran file yang besar, memerlukan ruang penyimpanan lebih banyak.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Produksi musik, rekaman audio profesional, editing suara.</li>
+                    </ul>
                 </div>
             </div>
         </div>
