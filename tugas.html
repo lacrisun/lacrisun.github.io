@@ -132,19 +132,29 @@
                     <h3 class="text-xl font-bold">
                         JPEG
                     </h3>
-                    <img alt="Contoh format gambar JPEG" class="my-4" src="img/cat.jpeg" width="300" height="200" />
+                    <img alt="Contoh format gambar JPEG" class="my-4" src="img/image.jpg" width="300" height="200" />
                     <p class="my-2">
-                        JPEG adalah format gambar lossy compression yang paling banyak digunakan di dunia. Format ini mengompres data citra dengan mengurangi detail halus yang tidak terlalu terlihat oleh mata manusia, sehingga menghasilkan ukuran file yang lebih kecil. JPEG sangat cocok untuk fotografi digital dan gambar dengan gradasi warna kompleks, tetapi tidak mendukung transparansi. Dalam sistem multimedia, JPEG sangat efisien untuk web dan presentasi karena keseimbangan antara kualitas dan ukuran file.
+                        JPEG menggunakan kompresi lossy yang membagi gambar menjadi potongan kecil untuk mengurangi detail tak terlihat, sehingga ukuran file bisa sangat kecil. tidak mendukung animasi atau transparansi, mendukung hingga 24 bit warna (sekitar 16,7 juta warna) dan diakui di hampir semua perangkat, aplikasi, dan browser.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kompresi sangat efektif sehingga file bisa diperkecil drastis, kompatibilitas hampir sempurna di berbagai platform</li>
+                        <li><span class="font-bold">Kekurangan : </span>Kualitas menurun dan muncul artefak saat kompresi tinggi, tidak bisa menyimpan transparansi</li>
+                        <li><span class="font-bold">Kegunaan : </span>Fotografi digital, gambar untuk web/email, materi presentasi, thumbnail.</li>
+                        </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         PNG
                     </h3>
-                    <img alt="Contoh format gambar PNG" class="my-4" src="img/cat.png" width="300" height="200" />
+                    <img alt="Contoh format gambar PNG" class="my-4" src="img/image.png" width="300" height="200" />
                     <p class="my-2">
-                        PNG adalah format lossless yang mendukung transparansi (alpha channel) dan banyak digunakan untuk grafik web, logo, serta ikon. Berbeda dengan JPEG, PNG tidak menghilangkan detail gambar, membuatnya ideal untuk gambar dengan area warna solid dan teks. Meski ukuran filenya cenderung lebih besar, PNG tetap menjadi pilihan utama dalam desain antarmuka pengguna karena kualitas dan kejelasannya yang tinggi.
+                        PNG merupakan format gambar raster dengan kompresi lossless (algoritma DEFLATE) yang mendukung transparansi (alpha channel) dan kedalaman warna hingga 48-bit (16 bit per saluran RGB). Tidak mendukung animasi, menghasilkan ukuran file lebih besar dibanding format lossy seperti JPEG, namun kompatibilitasnya universal di berbagai perangkat lunak dan browser.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Mempertahankan kualitas gambar tanpa artefak kompresi; memungkinkan transparansi kompleks untuk desain fleksibel.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Ukuran file lebih besar daripada format lossy; tidak memiliki dukungan animasi bawaan.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Grafis web, logo, ikon, elemen antarmuka pengguna.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
@@ -152,71 +162,111 @@
                     </h3>
                     <img alt="Contoh format gambar GIF" class="my-4" src="img/image.gif" width="300" height="200" />
                     <p class="my-2">
-                        GIF adalah format gambar 8-bit yang mendukung animasi dan transparansi sederhana. Format ini sangat populer untuk membuat animasi pendek di media sosial dan web karena kemampuannya menyimpan banyak frame dalam satu file. Namun, keterbatasannya pada 256 warna membuatnya tidak ideal untuk foto atau gambar beresolusi tinggi. Dalam sistem multimedia, GIF sering digunakan untuk elemen visual interaktif dan ekspresif.
+                        GIF merupakan format gambar raster dengan kompresi lossless (algoritma LZW) yang mendukung animasi dan transparansi 1-bit (on/off). Memiliki palet warna terbatas (8-bit/256 warna), menghasilkan ukuran file relatif kecil untuk grafis sederhana, tetapi kurang cocok untuk gambar kompleks. Kompatibilitasnya universal di hampir semua platform dan browser.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Mendukung animasi multi-frame; kompatibilitas luas di berbagai perangkat dan aplikasi.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Terbatas pada 256 warna; ukuran file membesar untuk gambar detail atau gradien halus.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Animasi pendek, meme, ilustrasi sederhana, ikon transparan.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         BMP
                     </h3>
-                    <img alt="Contoh format gambar BMP" class="my-4" src="img/cat.bmp" width="300" height="200" />
-                    <p>
-                        BMP adalah format gambar raster yang menyimpan data piksel secara langsung tanpa kompresi. Karena sifatnya yang tidak terkompresi, file BMP berukuran sangat besar, tetapi menyediakan kualitas gambar tinggi. Format ini jarang digunakan di web, tetapi tetap digunakan dalam aplikasi Windows untuk menyimpan citra mentah. Dalam multimedia, BMP dapat berguna untuk pengolahan gambar tahap awal atau penggunaan teknis lokal.
+                    <img alt="Contoh format gambar BMP" class="my-4" src="img/image.bmp" width="300" height="200" />
+                    <p class="my-2">
+                        BMP adalah format gambar raster tanpa kompresi yang menyimpan setiap piksel secara langsung; tidak mendukung animasi atau transparansi penuh; menghasilkan ukuran file sangat besar; mendukung berbagai kedalaman warna (hingga 32 bit); dan didukung luas di berbagai sistem, meski jarang digunakan di web.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kualitas gambar utuh tanpa kehilangan data, struktur sederhana dan mudah di proses</li>
+                        <li><span class="font-bold">Kekurangan : </span>Ukuran file sangat besar, tidak efisien untuk distribusi atau penggunaan online
+                        <li><span class="font-bold">Kegunaan : </span>Pengolahan gambar awal</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         TIFF
                     </h3>
-                    <img alt="Contoh format gambar TIFF" class="my-4" src="img/cat.tiff" width="300" height="200" />
-                    <p>
-                        TIFF adalah format gambar beresolusi tinggi yang banyak digunakan dalam bidang pencitraan profesional seperti percetakan, pemindaian, dan fotografi digital. Format ini mendukung kompresi lossless, multi-layer, dan metadata lengkap. Karena fleksibilitas dan presisinya, TIFF sangat dihargai dalam arsip dokumen dan pemrosesan citra medis atau geografis.
+                    <img alt="Contoh format gambar TIFF" class="my-4" src="img/image.tiff" width="300" height="200" />
+                    <p class="my-2">
+                        TIFF adalah format gambar raster berkualitas tinggi yang mendukung kompresi lossless, transparansi, dan penyimpanan multi-layer dalam satu file. Format ini mampu menyimpan metadata lengkap dan mendukung kedalaman warna tinggi (hingga 32-bit per kanal), namun tidak mendukung animasi. Ukuran file TIFF cenderung besar, dan meskipun kompatibel luas di perangkat lunak profesional, format ini tidak didukung secara native oleh browser web.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kualitas gambar sangat tinggi tanpa kehilangan data sehingga fleksibel untuk berbagai kebutuhan profesional dan arsip jangka panjang</li>
+                        <li><span class="font-bold">Kekurangan : </span>Ukuran file sangat besar, sehingga tidak cocok untuk distribusi web atau penggunaan umum
+                        <li><span class="font-bold">Kegunaan : </span>Percetakan profesional, pemindaian dokumen, fotografi, arsip dokumen, citra medis dan citra geografis.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         SVG
                     </h3>
-                    <img alt="Contoh format gambar SVG" class="my-4" src="img/cat.svg" width="300" height="200" />
-                    <p>
-                        SVG adalah format gambar berbasis vektor yang menggunakan XML untuk mendeskripsikan grafik dua dimensi. Tidak seperti format raster, SVG dapat diskalakan tanpa kehilangan kualitas. SVG sangat populer untuk ikon, ilustrasi, dan grafik interaktif dalam pengembangan web karena mendukung animasi, CSS styling, dan interaktivitas JavaScript.
+                    <img alt="Contoh format gambar SVG" class="my-4" src="img/image.svg" width="300" height="200" />
+                    <p class="my-2">
+                        SVG adalah format gambar vektor berbasis XML yang mendukung kompresi lossless (melalui SVGZ), animasi, transparansi, serta interaktivitas melalui CSS dan JavaScript. Ukuran file umumnya kecil dan dapat diskalakan tanpa kehilangan kualitas. SVG mendukung kedalaman warna tinggi dan kompatibel luas di semua browser modern serta perangkat lunak desain profesional.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Skalabilitas tanpa kehilangan kualitas, dukungan penuh untuk animasi dan interaktivitas web.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Rentan terhadap potensi risiko keamanan seperti skrip berbahaya jika tidak ditangani dengan benar, dan kurang optimal untuk gambar fotografi atau citra kompleks berbasis piksel</li>
+                        <li><span class="font-bold">Kegunaan : </span>Ikon, ilustrasi, grafik interaktif, logo, visualisasi data, dan antarmuka web</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         WEBP
                     </h3>
-                    <img alt="Contoh format gambar WEBP" class="my-4" src="img/cat.webp" width="300" height="200" />
-                    <p>
-                        WebP adalah format gambar modern yang dikembangkan oleh Google untuk web. WebP menawarkan kompresi baik lossy maupun lossless, mendukung transparansi (alpha), dan animasi, menjadikannya pengganti JPEG, PNG, dan GIF secara bersamaan. Ukuran filenya biasanya lebih kecil hingga 30% dibanding JPEG atau PNG dengan kualitas serupa, membuat WebP sangat efisien untuk kecepatan muat halaman.
+                    <img alt="Contoh format gambar WEBP" class="my-4" src="img/image.webp" width="300" height="200" />
+                    <p class="my-2">
+                        WebP adalah format gambar raster yang mendukung kompresi lossy dan lossless, transparansi (8-bit alpha channel), serta animasi. Ukuran file lebih kecil dibanding JPEG/PNG (hingga 30%) dengan kualitas setara, menggunakan teknologi VP8/VP9 encoding. Mendukung kedalaman warna 24-bit (RGB) dan 32-bit (RGBA), serta kompatibilitas luas di browser modern (kecuali beberapa versi lama).
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span> Ukuran file kecil dengan kualitas tinggi; menggabungkan fitur JPEG, PNG, dan GIF dalam satu format.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Tidak didukung penuh di semua browser lama; proses dekode lebih intensif sumber daya.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Gambar web, animasi ringan, elemen antarmuka transparan.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         HEIC
                     </h3>
-                    <img alt="Contoh format gambar HEIC" class="my-4" src="img/cat.heic" width="300" height="200" />
-                    <p>
-                        HEIC adalah format gambar baru yang berbasis HEVC (High Efficiency Video Coding) dan digunakan oleh Apple di perangkat iOS dan macOS. Format ini menawarkan kualitas gambar tinggi dengan ukuran file yang lebih kecil dibanding JPEG. HEIC juga mendukung penyimpanan beberapa gambar dalam satu file (seperti burst mode) serta transparansi dan metadata yang kaya. Namun, keterbatasannya adalah kurangnya dukungan di platform non-Apple.
+                    <img alt="Contoh format gambar HEIC" class="my-4" src="img/image.heic" width="300" height="200" />
+                    <p class="my-2">
+                        HEIC adalah format gambar berbasis HEVC/H.265 yang mendukung kompresi lossy dan lossless dengan ukuran file lebih kecil daripada JPEG (hingga 50%) pada kualitas serupa. Mendukung kedalaman warna tinggi, transparansi (alpha channel), multiple images (burst/stack), dan metadata lengkap. Kompatibilitas terbatas terutama di perangkat Apple (iOS/macOS), dengan dukungan parsial di platform lain.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Rasio kompresi tinggi dengan kualitas superior; fitur canggih seperti multi-image dan metadata ekstensif.</li>
+                        <li><span class="font-bold">Kekurangan : </span> Dukungan terbatas di luar ekosistem Apple, memerlukan lisensi paten HEVC.</li>
+                        <li><span class="font-bold">Kegunaan : </span> Penyimpanan foto di perangkat Apple, fotografi profesional, gambar berlapis.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         AVIF
                     </h3>
-                    <img alt="Contoh format gambar AVIF" class="my-4" src="img/cat.avif" width="300" height="200" />
-                    <p>
-                        AVIF adalah format gambar modern berbasis AV1 codec (AOMedia Video 1) yang dikembangkan oleh Alliance for Open Media. Format ini dirancang untuk menggantikan JPEG dan WebP dalam konteks distribusi gambar web beresolusi tinggi. AVIF mendukung kompresi lossy dan lossless, transparansi, HDR, animasi, serta metadata yang kaya, menjadikannya salah satu format paling canggih saat ini. Keunggulan utama AVIF adalah efisiensi kompresi yang luar biasa, mampu menghasilkan gambar dengan kualitas sangat tinggi dan ukuran file lebih kecil daripada JPEG dan WebP. AVIF juga mendukung fitur-fitur canggih seperti depth map, film grain, dan 10-bit color.
+                    <img alt="Contoh format gambar AVIF" class="my-4" src="img/image.avif" width="300" height="200" />
+                    <p class="my-2">
+                        AVIF adalah format gambar modern berbasis codec AV1 yang mendukung kompresi lossy dan lossless, transparansi, HDR, animasi, serta metadata kaya. Format ini mendukung kedalaman warna hingga 12-bit per kanal, memungkinkan representasi warna yang lebih akurat dan rentang dinamis yang lebih luas dibandingkan format tradisional seperti JPEG. AVIF menawarkan efisiensi kompresi yang tinggi, menghasilkan ukuran file lebih kecil tanpa mengorbankan kualitas gambar. Namun, dukungan format ini di beberapa perangkat dan aplikasi masih terbatas, meskipun semakin banyak platform yang mulai mengadopsinya.​
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Kualitas gambar tinggi dengan ukuran file lebih kecil dibandingkan JPEG dan WebP, Mendukung fitur canggih seperti transparansi, HDR, animasi, dan metadata kaya.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Dukungan perangkat lunak dan perangkat keras yang belum merata, Proses encoding yang lebih kompleks dan memerlukan sumber daya lebih besar.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Distribusi gambar web beresolusi tinggi, fotografi digital, pemrosesan citra profesional, arsip digital, grafik interaktif.</li>
+                    </ul>
                 </div>
                 <div class="p-4 border border-gray-600 rounded hover:text-[#07C85E] hover:border-[#07C85E]">
                     <h3 class="text-xl font-bold">
                         PSD
                     </h3>
-                    <img alt="Contoh format gambar PSD" class="my-4" src="img/cat.psd" width="300" height="200" />
-                    <p>
-                        PSD adalah format file native untuk Adobe Photoshop yang menyimpan data gambar beserta semua lapisan (layers), efek, teks, dan mask. PSD memungkinkan fleksibilitas editing yang sangat tinggi dan digunakan luas dalam desain grafis profesional. File PSD biasanya digunakan dalam proses kreatif sebelum diekspor ke format lain seperti JPEG, PNG, atau PDF untuk distribusi.
+                    <img alt="Contoh format gambar PSD" class="my-4" src="img/image.psd" width="300" height="200" />
+                    <p class="my-2">
+                        PSD adalah format gambar raster native Adobe Photoshop yang menyimpan semua elemen desain seperti lapisan (layers), teks, efek, dan mask secara terpisah. Format ini mendukung transparansi, kedalaman warna tinggi (hingga 32-bit per kanal), dan animasi berbasis frame. Meskipun mendukung kompresi lossless, ukuran file PSD tetap besar dan tidak cocok untuk distribusi web. Dukungan format ini terbatas di luar ekosistem Adobe.
                     </p>
+                    <ul class="text-sm">
+                        <li><span class="font-bold">Kelebihan : </span>Fleksibilitas tinggi untuk pengeditan non-destruktif, Integrasi erat dengan produk Adobe lainnya.</li>
+                        <li><span class="font-bold">Kekurangan : </span>Ukuran file besar dan tidak efisien untuk distribusi, Kompatibilitas terbatas di luar perangkat lunak Adobe.</li>
+                        <li><span class="font-bold">Kegunaan : </span>Desain grafis profesional, Fotografi digital, pengeditan gambar kompleks.</li>
+                    </ul>
                 </div>
             </div>
         </section>
