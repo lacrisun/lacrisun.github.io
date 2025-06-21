@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #08160D;
+    color: #d1d5db;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 bg-gradient-to-r from-primary to-primary-dark text-white font-medium rounded-lg transition-all duration-300 hover:shadow-lg hover:shadow-primary/25 hover:-translate-y-0.5 active:translate-y-0;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-primary font-medium rounded-lg transition-all duration-300 hover:bg-primary hover:text-white hover:-translate-y-0.5 active:translate-y-0;
+  }
+  
+  .section-padding {
+    @apply py-20 px-4;
+  }
+  
+  .container-custom {
+    @apply max-w-6xl mx-auto;
+  }
+  
+  .card {
+    @apply bg-dark-card border border-gray-700 rounded-xl p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-primary-dark bg-clip-text text-transparent;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #07C85E;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #05a049;
+}
+
+/* Selection */
+::selection {
+  background: #07C85E;
+  color: white;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 2px solid #07C85E;
+  outline-offset: 2px;
+}
