@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Menu, X, Github, ExternalLink } from 'lucide-react'
+import { Menu, X, Github } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const Header = () => {
