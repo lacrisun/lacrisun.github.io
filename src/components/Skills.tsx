@@ -9,19 +9,19 @@ const Skills = () => {
   })
 
   const skills = [
-    { name: 'HTML5', icon: '/img/icons8-html-5-250.png' },
-    { name: 'CSS3', icon: '/img/icons8-css-150.png' },
-    { name: 'JavaScript', icon: '/img/icons8-javascript-250.png' },
+    { name: 'HTML5', icon: 'img/icons8-html-5-250.png' },
+    { name: 'CSS3', icon: 'img/icons8-css-150.png' },
+    { name: 'JavaScript', icon: 'img/icons8-javascript-250.png' },
     { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
-    { name: 'Python', icon: '/img/icons8-python-250.png' },
-    { name: 'Node.js', icon: '/img/node-js.png' },
-    { name: 'Tailwind', icon: '/img/icons8-tailwind-css-192.png' },
-    { name: 'MongoDB', icon: '/img/MDB_BIG.D-96d632a9.png' },
+    { name: 'Python', icon: 'img/icons8-python-250.png' },
+    { name: 'Node.js', icon: 'img/node-js.png' },
+    { name: 'Tailwind', icon: 'img/icons8-tailwind-css-192.png' },
+    { name: 'MongoDB', icon: 'img/MDB_BIG.D-96d632a9.png' },
     { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
-    { name: 'Next.js', icon: '/img/Nextjs-logo.png' },
+    { name: 'Next.js', icon: 'img/Nextjs-logo.png' },
     { name: 'Vite.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg' },
-    { name: 'C#', icon: '/img/icons8-c-sharp-logo-150.png' },
-    { name: 'C++', icon: '/img/icons8-c++-150.png' },
+    { name: 'C#', icon: 'img/icons8-c-sharp-logo-150.png' },
+    { name: 'C++', icon: 'img/icons8-c++-150.png' },
     { name: 'Godot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg' },
   ]
 
