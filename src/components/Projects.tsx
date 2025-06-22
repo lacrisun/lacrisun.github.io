@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { ExternalLink, Github, Code, Brain, Smartphone, BarChart3 } from 'lucide-react'
+import { ExternalLink, Github, Brain, Smartphone, BarChart3 } from 'lucide-react'
 
 const Projects = () => {
   const [ref, inView] = useInView({
