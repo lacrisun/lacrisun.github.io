@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { Github, Instagram, ExternalLink } from 'lucide-react'
 
