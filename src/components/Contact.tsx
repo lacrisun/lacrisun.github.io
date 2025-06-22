@@ -13,8 +13,8 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'gusti@example.com',
-      href: 'mailto:gusti@example.com',
+      value: 'gustipanji2006@gmail.com',
+      href: 'mailto:gustipanji2006@gmail.com',
     },
     {
       icon: Github,
@@ -88,7 +88,7 @@ const Contact = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="mailto:gusti@example.com"
+            href="mailto:gustipanji2006@gmail.com"
             className="btn-primary"
           >
             <Mail size={18} className="mr-2" />

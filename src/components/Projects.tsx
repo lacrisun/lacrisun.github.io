@@ -1,7 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { ExternalLink, Github, Code, Gamepad2, Database } from 'lucide-react'
+import { ExternalLink, Github, Code, Brain, Smartphone, BarChart3 } from 'lucide-react'
 
 const Projects = () => {
   const [ref, inView] = useInView({
@@ -11,28 +11,28 @@ const Projects = () => {
 
   const projects = [
     {
-      title: 'Web Portfolio',
-      description: 'A responsive portfolio website built with HTML, CSS, and JavaScript featuring modern design and smooth animations.',
-      icon: Code,
-      technologies: ['HTML', 'CSS', 'JavaScript'],
-      liveUrl: '#',
-      githubUrl: '#',
+      title: 'AlgoSorting',
+      description: 'A comprehensive sorting algorithm visualization tool that demonstrates various sorting techniques with interactive animations and performance comparisons.',
+      icon: BarChart3,
+      technologies: ['JavaScript', 'HTML5', 'CSS3', 'Algorithms'],
+      liveUrl: 'https://lacrisun.github.io/algosorting/',
+      githubUrl: 'https://github.com/lacrisun/algosorting',
     },
     {
-      title: '2D Platformer Game',
-      description: 'A 2D platformer game developed in Unity with C#, featuring character movement, collectibles, and level progression.',
-      icon: Gamepad2,
-      technologies: ['Unity', 'C#', '2D Graphics'],
+      title: 'Lacri AI',
+      description: 'An intelligent AI assistant application featuring natural language processing capabilities and modern conversational interface design.',
+      icon: Brain,
+      technologies: ['Python', 'AI/ML', 'Natural Language Processing', 'API Integration'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/lacrisun/lacri-ai',
     },
     {
-      title: 'Task Management API',
-      description: 'RESTful API for task management built with Node.js and MongoDB, featuring user authentication and CRUD operations.',
-      icon: Database,
-      technologies: ['Node.js', 'MongoDB', 'Express'],
+      title: 'Alharom App',
+      description: 'A mobile application built with modern frameworks, featuring user-friendly interface and seamless user experience for daily productivity.',
+      icon: Smartphone,
+      technologies: ['Mobile Development', 'UI/UX Design', 'Cross-platform'],
       liveUrl: '#',
-      githubUrl: '#',
+      githubUrl: 'https://github.com/lacrisun/alharom-app',
     },
   ]
 
@@ -87,19 +87,25 @@ const Projects = () => {
                 </div>
 
                 <div className="flex gap-4 pt-2">
-                  <motion.a
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    href={project.liveUrl}
-                    className="flex items-center gap-2 text-primary hover:text-primary-dark transition-colors duration-300 font-medium"
-                  >
-                    <ExternalLink size={16} />
-                    Live Demo
-                  </motion.a>
+                  {project.liveUrl !== '#' && (
+                    <motion.a
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2 text-primary hover:text-primary-dark transition-colors duration-300 font-medium"
+                    >
+                      <ExternalLink size={16} />
+                      Live Demo
+                    </motion.a>
+                  )}
                   <motion.a
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
                     href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-2 text-primary hover:text-primary-dark transition-colors duration-300 font-medium"
                   >
                     <Github size={16} />

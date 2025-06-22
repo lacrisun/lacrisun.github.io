@@ -13,30 +13,34 @@ const Skills = () => {
     { name: 'HTML5', icon: '/img/icons8-html-5-250.png' },
     { name: 'CSS3', icon: '/img/icons8-css-150.png' },
     { name: 'JavaScript', icon: '/img/icons8-javascript-250.png' },
+    { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
     { name: 'Python', icon: '/img/icons8-python-250.png' },
     { name: 'Node.js', icon: '/img/node-js.png' },
     { name: 'Tailwind', icon: '/img/icons8-tailwind-css-192.png' },
     { name: 'MongoDB', icon: '/img/MDB_BIG.D-96d632a9.png' },
+    { name: 'MySQL', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
     { name: 'Next.js', icon: '/img/Nextjs-logo.png' },
+    { name: 'Vite.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vitejs/vitejs-original.svg' },
     { name: 'C#', icon: '/img/icons8-c-sharp-logo-150.png' },
     { name: 'C++', icon: '/img/icons8-c++-150.png' },
+    { name: 'Godot', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg' },
   ]
 
   const skillCategories = [
     {
       icon: Code,
       title: 'Frontend Development',
-      skills: ['HTML5 & CSS3', 'JavaScript (ES6+)', 'React & Next.js', 'Tailwind CSS', 'Responsive Design'],
+      skills: ['HTML5 & CSS3', 'JavaScript (ES6+)', 'React & Next.js', 'Vite.js', 'Tailwind CSS', 'Responsive Design'],
     },
     {
       icon: Server,
       title: 'Backend Development',
-      skills: ['Node.js', 'Python', 'MongoDB', 'RESTful APIs', 'Database Design'],
+      skills: ['Node.js', 'Python', 'MongoDB', 'MySQL', 'RESTful APIs', 'Database Design'],
     },
     {
       icon: Gamepad2,
       title: 'Game Development',
-      skills: ['C# & Unity', 'C++ Programming', 'Game Design', '2D/3D Graphics', 'Game Logic'],
+      skills: ['C# & Unity', 'C++ Programming', 'Godot Engine', 'Game Design', '2D/3D Graphics', 'Game Logic'],
     },
   ]
 
