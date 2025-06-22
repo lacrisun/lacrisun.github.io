@@ -112,26 +112,6 @@ const Skills = () => {
           ))}
         </div>
       </div>
-
-      <style jsx>{`
-        .mask-gradient {
-          mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
-          -webkit-mask: linear-gradient(90deg, transparent, white 10%, white 90%, transparent);
-        }
-        
-        @keyframes slide {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
-        }
-        
-        .animate-slide {
-          animation: slide 30s linear infinite;
-        }
-        
-        .animate-slide:hover {
-          animation-play-state: paused;
-        }
-      `}</style>
     </section>
   )
 }
